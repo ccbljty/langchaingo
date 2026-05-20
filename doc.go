@@ -7,13 +7,13 @@
 //
 // The framework is organized around several key packages:
 //
-//   - [github.com/tmc/langchaingo/llms]: Interfaces and implementations for various language models (OpenAI, Anthropic, Google, etc.)
-//   - [github.com/tmc/langchaingo/chains]: Composable operations that can be linked together to create complex workflows
-//   - [github.com/tmc/langchaingo/agents]: Autonomous entities that can use tools to accomplish tasks
-//   - [github.com/tmc/langchaingo/embeddings]: Text embedding functionality for semantic search and similarity
-//   - [github.com/tmc/langchaingo/vectorstores]: Interfaces to vector databases for storing and querying embeddings
-//   - [github.com/tmc/langchaingo/memory]: Conversation history and context management
-//   - [github.com/tmc/langchaingo/tools]: External tool integrations (web search, calculators, databases, etc.)
+//   - [github.com/ccbljty/langchaingo/llms]: Interfaces and implementations for various language models (OpenAI, Anthropic, Google, etc.)
+//   - [github.com/ccbljty/langchaingo/chains]: Composable operations that can be linked together to create complex workflows
+//   - [github.com/ccbljty/langchaingo/agents]: Autonomous entities that can use tools to accomplish tasks
+//   - [github.com/ccbljty/langchaingo/embeddings]: Text embedding functionality for semantic search and similarity
+//   - [github.com/ccbljty/langchaingo/vectorstores]: Interfaces to vector databases for storing and querying embeddings
+//   - [github.com/ccbljty/langchaingo/memory]: Conversation history and context management
+//   - [github.com/ccbljty/langchaingo/tools]: External tool integrations (web search, calculators, databases, etc.)
 //
 // # Quick Start
 //
@@ -23,8 +23,8 @@
 //		"context"
 //		"log"
 //
-//		"github.com/tmc/langchaingo/llms"
-//		"github.com/tmc/langchaingo/llms/openai"
+//		"github.com/ccbljty/langchaingo/llms"
+//		"github.com/ccbljty/langchaingo/llms/openai"
 //	)
 //
 //	ctx := context.Background()
@@ -40,9 +40,9 @@
 // Creating embeddings and using vector search:
 //
 //	import (
-//		"github.com/tmc/langchaingo/embeddings"
-//		"github.com/tmc/langchaingo/schema"
-//		"github.com/tmc/langchaingo/vectorstores/chroma"
+//		"github.com/ccbljty/langchaingo/embeddings"
+//		"github.com/ccbljty/langchaingo/schema"
+//		"github.com/ccbljty/langchaingo/vectorstores/chroma"
 //	)
 //
 //	// Create an embedder
@@ -70,8 +70,8 @@
 // Building a chain for question answering:
 //
 //	import (
-//		"github.com/tmc/langchaingo/chains"
-//		"github.com/tmc/langchaingo/vectorstores"
+//		"github.com/ccbljty/langchaingo/chains"
+//		"github.com/ccbljty/langchaingo/vectorstores"
 //	)
 //
 //	chain := chains.NewRetrievalQAFromLLM(
@@ -121,9 +121,9 @@
 // Create agents that can use tools to accomplish complex tasks:
 //
 //	import (
-//		"github.com/tmc/langchaingo/agents"
-//		"github.com/tmc/langchaingo/tools/serpapi"
-//		"github.com/tmc/langchaingo/tools/calculator"
+//		"github.com/ccbljty/langchaingo/agents"
+//		"github.com/ccbljty/langchaingo/tools/serpapi"
+//		"github.com/ccbljty/langchaingo/tools/calculator"
 //	)
 //
 //	// Create tools
@@ -144,8 +144,8 @@
 // Maintain conversation context across multiple interactions:
 //
 //	import (
-//		"github.com/tmc/langchaingo/memory"
-//		"github.com/tmc/langchaingo/chains"
+//		"github.com/ccbljty/langchaingo/memory"
+//		"github.com/ccbljty/langchaingo/chains"
 //	)
 //
 //	// Create memory
@@ -210,7 +210,7 @@
 //
 // LangchainGo provides standardized error handling:
 //
-//	import "github.com/tmc/langchaingo/llms"
+//	import "github.com/ccbljty/langchaingo/llms"
 //
 //	if err != nil {
 //		if llms.IsAuthenticationError(err) {
@@ -226,7 +226,7 @@
 // LangchainGo includes comprehensive testing utilities including HTTP record/replay for internal tests.
 // The httprr package provides deterministic testing of HTTP interactions:
 //
-//	import "github.com/tmc/langchaingo/internal/httprr"
+//	import "github.com/ccbljty/langchaingo/internal/httprr"
 //
 //	func TestMyFunction(t *testing.T) {
 //		rr := httprr.OpenForTest(t, http.DefaultTransport)

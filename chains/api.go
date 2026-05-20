@@ -10,10 +10,10 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/memory"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/ccbljty/langchaingo/llms"
+	"github.com/ccbljty/langchaingo/memory"
+	"github.com/ccbljty/langchaingo/prompts"
+	"github.com/ccbljty/langchaingo/schema"
 )
 
 //go:embed prompts/llm_api_url.txt

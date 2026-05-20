@@ -6,10 +6,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/ccbljty/langchaingo/httputil"
+	"github.com/ccbljty/langchaingo/internal/httprr"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/httputil"
-	"github.com/tmc/langchaingo/internal/httprr"
 )
 
 const testURL = "https://api-inference.huggingface.co"

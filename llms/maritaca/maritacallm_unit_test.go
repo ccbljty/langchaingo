@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/ccbljty/langchaingo/callbacks"
+	"github.com/ccbljty/langchaingo/llms"
+	"github.com/ccbljty/langchaingo/llms/maritaca/internal/maritacaclient"
+	"github.com/ccbljty/langchaingo/schema"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/maritaca/internal/maritacaclient"
-	"github.com/tmc/langchaingo/schema"
 )
 
 func TestNew(t *testing.T) {

@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ccbljty/langchaingo/internal/httprr"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/internal/httprr"
 )
 
 // getOllamaTestURL returns the Ollama server URL to use for testing.

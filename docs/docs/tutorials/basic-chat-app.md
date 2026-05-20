@@ -15,7 +15,7 @@ go mod init chat-app
 Install LangChainGo:
 
 ```bash
-go get github.com/tmc/langchaingo
+go get github.com/ccbljty/langchaingo
 ```
 
 ## Step 2: Configure Your API Key
@@ -38,8 +38,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/tmc/langchaingo/llms"
-    "github.com/tmc/langchaingo/llms/openai"
+    "github.com/ccbljty/langchaingo/llms"
+    "github.com/ccbljty/langchaingo/llms/openai"
 )
 
 func main() {
@@ -81,8 +81,8 @@ import (
     "os"
     "strings"
 
-    "github.com/tmc/langchaingo/llms"
-    "github.com/tmc/langchaingo/llms/openai"
+    "github.com/ccbljty/langchaingo/llms"
+    "github.com/ccbljty/langchaingo/llms/openai"
 )
 
 func main() {
@@ -133,9 +133,9 @@ import (
     "os"
     "strings"
 
-    "github.com/tmc/langchaingo/llms"
-    "github.com/tmc/langchaingo/llms/openai"
-    "github.com/tmc/langchaingo/memory"
+    "github.com/ccbljty/langchaingo/llms"
+    "github.com/ccbljty/langchaingo/llms/openai"
+    "github.com/ccbljty/langchaingo/memory"
 )
 
 func main() {
@@ -205,9 +205,9 @@ import (
     "os"
     "strings"
 
-    "github.com/tmc/langchaingo/chains"
-    "github.com/tmc/langchaingo/llms/openai"
-    "github.com/tmc/langchaingo/memory"
+    "github.com/ccbljty/langchaingo/chains"
+    "github.com/ccbljty/langchaingo/llms/openai"
+    "github.com/ccbljty/langchaingo/memory"
 )
 
 func main() {
@@ -264,7 +264,7 @@ go run main.go
 
 ## Complete Example
 
-You can find the complete working example with all steps in the [tutorial-basic-chat-app](https://github.com/tmc/langchaingo/tree/main/examples/tutorial-basic-chat-app) directory.
+You can find the complete working example with all steps in the [tutorial-basic-chat-app](https://github.com/ccbljty/langchaingo/tree/main/examples/tutorial-basic-chat-app) directory.
 
 ## Conclusion
 

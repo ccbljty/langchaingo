@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"cloud.google.com/go/vertexai/genai"
-	"github.com/tmc/langchaingo/llms"
+	"github.com/ccbljty/langchaingo/llms"
 )
 
 func TestConvertToolSchemaType(t *testing.T) {

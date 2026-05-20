@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"strconv"
 
+	"github.com/ccbljty/langchaingo/embeddings"
 	"github.com/milvus-io/milvus-sdk-go/v2/client"
 	oldentity "github.com/milvus-io/milvus-sdk-go/v2/entity"
 	"github.com/milvus-io/milvus/client/v2/entity"
 	"github.com/milvus-io/milvus/client/v2/index"
 	"github.com/milvus-io/milvus/client/v2/milvusclient"
-	"github.com/tmc/langchaingo/embeddings"
 )
 
 const (

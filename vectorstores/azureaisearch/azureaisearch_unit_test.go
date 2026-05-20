@@ -13,13 +13,13 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/ccbljty/langchaingo/embeddings"
+	"github.com/ccbljty/langchaingo/httputil"
+	"github.com/ccbljty/langchaingo/schema"
+	"github.com/ccbljty/langchaingo/vectorstores"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/httputil"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
 )
 
 // testEmbedder is a test embedder for unit testing.

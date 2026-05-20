@@ -1,11 +1,11 @@
 package agents
 
 import (
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/memory"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/tools"
+	"github.com/ccbljty/langchaingo/callbacks"
+	"github.com/ccbljty/langchaingo/memory"
+	"github.com/ccbljty/langchaingo/prompts"
+	"github.com/ccbljty/langchaingo/schema"
+	"github.com/ccbljty/langchaingo/tools"
 )
 
 type Options struct {

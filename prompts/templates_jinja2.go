@@ -6,9 +6,9 @@ import (
 	"io/fs"
 	"sync"
 
+	"github.com/ccbljty/langchaingo/prompts/internal/loader"
 	"github.com/nikolalohinski/gonja"
 	"github.com/nikolalohinski/gonja/config"
-	"github.com/tmc/langchaingo/prompts/internal/loader"
 )
 
 var (

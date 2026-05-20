@@ -1,8 +1,8 @@
-module github.com/tmc/langchaingo/examples/ernie-chat-example
+module github.com/ccbljty/langchaingo/examples/ernie-chat-example
 
 go 1.24.3
 
-require github.com/tmc/langchaingo v0.1.14-pre.4
+require github.com/ccbljty/langchaingo v0.1.14-pre.4
 
 require (
 	github.com/dlclark/regexp2 v1.10.0 // indirect

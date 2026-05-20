@@ -8,10 +8,10 @@ import (
 	"strings"
 
 	chroma_go "github.com/amikos-tech/chroma-go/types"
+	"github.com/ccbljty/langchaingo/schema"
+	"github.com/ccbljty/langchaingo/vectorstores"
+	"github.com/ccbljty/langchaingo/vectorstores/chroma"
 	"github.com/google/uuid"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
-	"github.com/tmc/langchaingo/vectorstores/chroma"
 )
 
 func main() {

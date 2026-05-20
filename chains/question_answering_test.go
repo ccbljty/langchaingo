@@ -6,9 +6,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/ccbljty/langchaingo/internal/httprr"
+	"github.com/ccbljty/langchaingo/llms/openai"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/internal/httprr"
-	"github.com/tmc/langchaingo/llms/openai"
 )
 
 // createOpenAILLMForQA creates an OpenAI LLM with httprr support for testing.

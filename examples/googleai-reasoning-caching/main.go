@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ccbljty/langchaingo/llms"
+	"github.com/ccbljty/langchaingo/llms/googleai"
 	"github.com/google/generative-ai-go/genai"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/googleai"
 )
 
 func main() {

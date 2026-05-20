@@ -3,8 +3,8 @@ package bedrock
 import (
 	"testing"
 
+	"github.com/ccbljty/langchaingo/llms"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/llms"
 )
 
 func TestToolCallProcessing(t *testing.T) {

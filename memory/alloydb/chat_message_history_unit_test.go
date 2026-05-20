@@ -5,9 +5,9 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/ccbljty/langchaingo/llms"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/llms"
 )
 
 func TestApplyChatMessageHistoryOptions(t *testing.T) {

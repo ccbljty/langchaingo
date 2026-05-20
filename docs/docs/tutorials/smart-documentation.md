@@ -23,7 +23,7 @@ A CLI tool that:
 mkdir smart-docs
 cd smart-docs
 go mod init smart-docs
-go get github.com/tmc/langchaingo
+go get github.com/ccbljty/langchaingo
 go get golang.org/x/tools/go/packages
 go get golang.org/x/tools/go/ast/astutil
 ```
@@ -558,9 +558,9 @@ import (
     "strings"
     "text/template"
 
-    "github.com/tmc/langchaingo/llms"
-    "github.com/tmc/langchaingo/llms/openai"
-    "github.com/tmc/langchaingo/prompts"
+    "github.com/ccbljty/langchaingo/llms"
+    "github.com/ccbljty/langchaingo/llms/openai"
+    "github.com/ccbljty/langchaingo/prompts"
 )
 
 type DocGenerator struct {

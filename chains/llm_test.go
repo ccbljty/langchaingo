@@ -8,13 +8,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/ccbljty/langchaingo/callbacks"
+	"github.com/ccbljty/langchaingo/httputil"
+	"github.com/ccbljty/langchaingo/internal/httprr"
+	"github.com/ccbljty/langchaingo/llms/googleai"
+	"github.com/ccbljty/langchaingo/llms/openai"
+	"github.com/ccbljty/langchaingo/prompts"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/httputil"
-	"github.com/tmc/langchaingo/internal/httprr"
-	"github.com/tmc/langchaingo/llms/googleai"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/prompts"
 )
 
 // hasExistingRecording checks if a httprr recording exists for this test
@@ -132,7 +132,7 @@ func TestLLMChainWithGoogleAI(t *testing.T) {
 	chain := NewLLMChain(model, prompt)
 
 	// chains tramples over defaults for options, so setting these options
-	// explicitly is required until https://github.com/tmc/langchaingo/issues/626
+	// explicitly is required until https://github.com/ccbljty/langchaingo/issues/626
 	// is fully resolved.
 	result, err := Predict(ctx, chain,
 		map[string]any{

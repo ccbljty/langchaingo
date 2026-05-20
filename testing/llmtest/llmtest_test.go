@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tmc/langchaingo/llms"
+	"github.com/ccbljty/langchaingo/llms"
 )
 
 // TestMockLLM tests the mock implementation.

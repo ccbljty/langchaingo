@@ -3,7 +3,7 @@ package llamafile
 import (
 	"testing"
 
-	"github.com/tmc/langchaingo/testing/llmtest"
+	"github.com/ccbljty/langchaingo/testing/llmtest"
 )
 
 func TestLLM(t *testing.T) {

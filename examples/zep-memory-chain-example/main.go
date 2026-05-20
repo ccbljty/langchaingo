@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/ccbljty/langchaingo/chains"
+	"github.com/ccbljty/langchaingo/llms/openai"
+	zepLangchainMemory "github.com/ccbljty/langchaingo/memory/zep"
 	"github.com/getzep/zep-go"
 	zepClient "github.com/getzep/zep-go/client"
 	zepOption "github.com/getzep/zep-go/option"
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/llms/openai"
-	zepLangchainMemory "github.com/tmc/langchaingo/memory/zep"
 )
 
 func main() {
