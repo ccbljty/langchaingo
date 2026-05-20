@@ -89,11 +89,31 @@ func GetThinkingConfig(opts *CallOptions) *ThinkingConfig {
 	return config
 }
 
+// WithThinkingSwitch enables or disables thinking altogether.
+func WithThinkingSwitch(switchOn bool) CallOption {
+	return func(opts *CallOptions) {
+		opts.EnableThinking = &switchOn
+		opt := "enabled"
+		if !switchOn {
+			opt = "disabled"
+		}
+		opts.Thinking = map[string]any{"type": opt}
+	}
+}
+
+// WithThinkingStrategy sets the thinking strategy for the request.
+func WithThinkingStrategy(strategy string) CallOption {
+	return func(opts *CallOptions) {
+		opts.ThinkingStrategy = strategy
+	}
+}
+
 // WithThinkingMode sets the thinking mode for the request.
 func WithThinkingMode(mode ThinkingMode) CallOption {
 	return func(opts *CallOptions) {
 		config := getOrCreateThinkingConfig(opts)
 		config.Mode = mode
+		opts.ReasoningEffort = string(mode)
 	}
 }
 
@@ -102,6 +122,7 @@ func WithThinkingBudget(tokens int) CallOption {
 	return func(opts *CallOptions) {
 		config := getOrCreateThinkingConfig(opts)
 		config.BudgetTokens = tokens
+		opts.ThinkingBudget = tokens
 	}
 }
 
