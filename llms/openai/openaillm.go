@@ -294,6 +294,11 @@ func (o *LLM) GenerateContent(ctx context.Context, messages []llms.MessageConten
 		Seed:                 opts.Seed,
 		Metadata:             apiMetadata,
 		WebSearchOptions:     webSearchOptionsFromCallOptions(opts.WebSearchOptions),
+		// thinking related fields
+		Thinking:         opts.Thinking,
+		EnableThinking:   opts.EnableThinking,
+		ThinkingBudget:   opts.ThinkingBudget,
+		ThinkingStrategy: opts.ThinkingStrategy,
 	}
 	if opts.JSONMode {
 		req.ResponseFormat = ResponseFormatJSON

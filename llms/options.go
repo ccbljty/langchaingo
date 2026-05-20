@@ -73,6 +73,17 @@ type CallOptions struct {
 	// WebSearchOptions configures web search behavior for models that support it.
 	// Currently supported by OpenAI models like gpt-4o-search-preview.
 	WebSearchOptions *WebSearchOptions `json:"web_search_options,omitempty"`
+
+	// Thinking controls whether to enable deep thinking for GLM, Kimi, and DeepSeek series models.
+	Thinking map[string]any `json:"thinking,omitempty"`
+	// EnableThinking controls whether to enable thinking for Qwen and Ernie series models.
+	EnableThinking *bool `json:"enable_thinking,omitempty"`
+	// ThinkingBudget specifies the maximum token length for the chain-of-thought.
+	ThinkingBudget int `json:"thinking_budget,omitempty"`
+	// ThinkingStrategy specifies the chain-of-thought strategy.
+	ThinkingStrategy string `json:"thinking_strategy,omitempty"`
+	// ReasoningEffort specifies the reasoning intensity level.
+	ReasoningEffort string `json:"reasoning_effort,omitempty"`
 }
 
 // Tool is a tool that can be used by the model.
